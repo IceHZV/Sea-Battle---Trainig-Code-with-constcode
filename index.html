@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea battle</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="body">
+        <h1>Sea Battle</h1>
+        <h3>
+          "I fear all we have done is to awaken a sleeping giant and fill him
+          with a terrible resolve" Isoroku Yamamoto
+        </h3>
+        <div class="app-menu">
+          <div class="app-actions" data-scene="preparation">
+            <button class="app-action" data-computer="middle" disabled>
+              Fight with pirates
+            </button>
+
+            <button class="app-action" data-action="manually">
+              Flex your brain
+            </button>
+            <button class="app-action" data-action="randomize">
+              Random Luck
+            </button>
+          </div>
+
+          <div class="app-actions hidden" data-scene="computer">
+            <div class="battlefield-status">Yo-ho-ho! Your move captain</div>
+            <button class="app-action" data-action="gaveup">
+              Cowardly escape
+            </button>
+            <button class="app-action" data-action="again">
+              One more battle
+            </button>
+          </div>
+        </div>
+        <div class="body__game">
+          <div data-side="player"></div>
+          <div data-side="opponent"></div>
+        </div>
+        <div class="body__title">
+          <h3>Player field</h3>
+          <h3>Computer field</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/additional.js"></script>
+    <script src="js/Mouse.js"></script>
+    <script src="js/Application.js"></script>
+
+    <script src="js/Scene.js"></script>
+    <script src="js/scenes/PreparationScene.js"></script>
+    <script src="js/scenes/ComputerScene.js"></script>
+    <script src="js/Battlefield.js"></script>
+    <script src="js/BattlefieldView.js"></script>
+    <script src="js/Ship.js"></script>
+    <script src="js/ShipView.js"></script>
+    <script src="js/Shot.js"></script>
+    <script src="js/ShotView.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
